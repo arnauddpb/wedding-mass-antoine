@@ -78,6 +78,25 @@
       text-decoration: underline;
     }
 
+    /* SATB BUTTON (NOW UNIFIED WITH PDF STYLE) */
+    .btn-satb-global {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      color: #5a4632;
+      background: #f4f1ea;
+      padding: 10px 14px;
+      margin-left: 14px;
+      border-radius: 8px;
+      border: 1px solid #e0d6c6;
+      transition: all 0.2s ease;
+    }
+
+    .btn-satb-global:hover {
+      background-color: #e9e1d2;
+      transform: translateY(-1px);
+    }
+
     .links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -86,21 +105,25 @@
 
     .voice {
       background-color: #f4f1ea;
-      padding: 10px;
-      border-radius: 6px;
+      padding: 12px;
+      border-radius: 8px;
       text-align: center;
-    }
-
-    .voice a {
-      display: block;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid #e0d6c6;
       text-decoration: none;
       color: #333;
-      margin-top: 5px;
-      font-size: 0.9em;
+      display: block;
     }
 
-    .voice a:hover {
-      text-decoration: underline;
+    .voice:hover {
+      background-color: #e9e1d2;
+      transform: translateY(-1px);
+    }
+
+    .voice strong {
+      display: block;
+      margin-bottom: 4px;
     }
 
     footer {
@@ -121,7 +144,7 @@
 
 <div class="container">
 
-  <!-- ENTRY -->
+  <!-- ENTREE -->
   <div class="section">
     <h2>Chant d'entrée</h2>
 
@@ -129,29 +152,15 @@
       <div class="song-title">Jubilez !</div>
 
       <div class="pdf-link">
-        <a href="pdfs/amazing-grace.pdf">Partition - Jubilez !</a>
+        <a href="partitions/jubilez.pdf">Partition - Jubilez !</a>
+        <a class="btn-satb-global" href="https://www.youtube.com/watch?v=yLztd8gUvFk">SATB - Youtube</a>
       </div>
 
       <div class="links">
-        <div class="voice">
-          <strong>Soprane</strong>
-          <a href="#">YouTube</a>
-        </div>
-
-        <div class="voice">
-          <strong>Alto</strong>
-          <a href="#">YouTube</a>
-        </div>
-
-        <div class="voice">
-          <strong>Ténor</strong>
-          <a href="#">YouTube</a>
-        </div>
-
-        <div class="voice">
-          <strong>Basse</strong>
-          <a href="#">YouTube</a>
-        </div>
+        <a class="voice" href="https://www.youtube.com/watch?v=yLztd8gUvFk&t=94s"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=yLztd8gUvFk&t=181s"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=yLztd8gUvFk&t=248s"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=yLztd8gUvFk&t=318s"><strong>Basse</strong>Tuto Youtube</a>
       </div>
     </div>
   </div>
@@ -164,14 +173,15 @@
       <div class="song-title">Kyrie (Pro Europa)</div>
 
       <div class="pdf-link">
-        <a href="pdfs/kyrie-xviii.pdf">Partition - Kyrie (Pro Europa)</a>
+        <a href="partitions/kyrie-pro-europa.pdf">Partition - Kyrie (Pro Europa)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
       </div>
 
       <div class="links">
-        <div class="voice"><strong>Soprane</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Alto</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Ténor</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Basse</strong><a href="#">YouTube</a></div>
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
       </div>
     </div>
   </div>
@@ -184,14 +194,15 @@
       <div class="song-title">Gloria (St Boniface)</div>
 
       <div class="pdf-link">
-        <a href="pdfs/gloria.pdf">Partition - Gloria (St Boniface)</a>
+        <a href="partitions/gloria-st-boniface.pdf">Partition - Gloria (St Boniface)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
       </div>
 
       <div class="links">
-        <div class="voice"><strong>Soprane</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Alto</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Ténor</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Basse</strong><a href="#">YouTube</a></div>
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
       </div>
     </div>
   </div>
@@ -204,14 +215,199 @@
       <div class="song-title">Alléluia (St Boniface)</div>
 
       <div class="pdf-link">
-        <a href="pdfs/alleluia.pdf">Partition - Alléluia (St Boniface)</a>
+        <a href="partitions/alleluia-st-boniface.pdf">Partition - Alléluia (St Boniface)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
       </div>
 
       <div class="links">
-        <div class="voice"><strong>Soprane</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Alto</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Ténor</strong><a href="#">YouTube</a></div>
-        <div class="voice"><strong>Basse</strong><a href="#">YouTube</a></div>
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- ESPRIT SAINT -->
+  <div class="section">
+    <h2>Esprit Saint</h2>
+
+    <div class="song">
+      <div class="song-title">Esprit de lumière, Esprit créateur</div>
+
+      <div class="pdf-link">
+        <a href="partitions/esprit-de-lumiere.pdf">Partition - Esprit de lumière</a>
+        <a class="btn-satb-global" href="https://www.youtube.com/watch?v=8Zb9Xms9_O4">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="https://www.youtube.com/watch?v=8Zb9Xms9_O4&t=90s"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=8Zb9Xms9_O4&t=169s"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=8Zb9Xms9_O4&t=248s"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="https://www.youtube.com/watch?v=8Zb9Xms9_O4&t=320s"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACTION DE GRÂCE -->
+  <div class="section">
+    <h2>Action de grâce</h2>
+
+    <div class="song">
+      <div class="song-title">Resucito</div>
+
+      <div class="pdf-link">
+        <a href="partitions/resucito.pdf">Partition - Resucito</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFERTOIRE -->
+  <div class="section">
+    <h2>Offertoire</h2>
+
+    <div class="song">
+      <div class="song-title">L’Hymne des Chérubins</div>
+
+      <div class="pdf-link">
+        <a href="partitions/hymne-des-cherubins.pdf">Partition - L’Hymne des Chérubins</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SANCTUS -->
+  <div class="section">
+    <h2>Sanctus</h2>
+
+    <div class="song">
+      <div class="song-title">Sanctus (Pro Europa)</div>
+
+      <div class="pdf-link">
+        <a href="partitions/sanctus-pro-europa.pdf">Partition - Sanctus (Pro Europa)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANAMNESE -->
+  <div class="section">
+    <h2>Anamnèse</h2>
+
+    <div class="song">
+      <div class="song-title">Anamnèse (St Boniface)</div>
+
+      <div class="pdf-link">
+        <a href="partitions/anamnese-st-boniface.pdf">Partition - Anamnèse (St Boniface)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- AGNUS DEI -->
+  <div class="section">
+    <h2>Agnus Dei</h2>
+
+    <div class="song">
+      <div class="song-title">Agnus Dei (Pro Europa)</div>
+
+      <div class="pdf-link">
+        <a href="partitions/agnus-dei-pro-europa.pdf">Partition - Agnus Dei (Pro Europa)</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMUNION -->
+  <div class="section">
+    <h2>Communion</h2>
+
+    <div class="song">
+      <div class="song-title">Ô Vrai Corps de Jésus</div>
+
+      <div class="pdf-link">
+        <a href="partitions/o-vrai-corps.pdf">Partition - Ô Vrai Corps de Jésus</a>
+        <a class="btn-satb-global" href="https://youtu.be/xpEy10k8KLE">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="https://youtu.be/HXL1wUuBsDk?list=RDHXL1wUuBsDk"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/0VUr2gJoxpk?list=RD0VUr2gJoxpk"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/UUFvlp0h74M?list=RDUUFvlp0h74M"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/2EvXBsGdZ2A?list=RD2EvXBsGdZ2A"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+
+    <div class="song">
+      <div class="song-title">Anima Christi</div>
+
+      <div class="pdf-link">
+        <a href="partitions/anima-christi.pdf">Partition - Anima Christi</a>
+        <a class="btn-satb-global" href="https://youtu.be/6C1bFIaJ3o4">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="https://youtu.be/2272uI1pcj0?list=RD2272uI1pcj0"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/jz_nDSFrim8?list=RDjz_nDSFrim8"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/nfb-reMoFwA?list=RDnfb-reMoFwA"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="https://youtu.be/pUsFs71buoU?list=RDpUsFs71buoU"><strong>Basse</strong>Tuto Youtube</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONSÉCRATION -->
+  <div class="section">
+    <h2>Consécration à la Vierge</h2>
+
+    <div class="song">
+      <div class="song-title">Réjouis-toi Marie</div>
+
+      <div class="pdf-link">
+        <a href="partitions/rejouis-toi-marie.pdf">Partition - Réjouis-toi Marie</a>
+        <a class="btn-satb-global" href="#">SATB - Youtube</a>
+      </div>
+
+      <div class="links">
+        <a class="voice" href="#"><strong>Soprane</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Alto</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Ténor</strong>Tuto Youtube</a>
+        <a class="voice" href="#"><strong>Basse</strong>Tuto Youtube</a>
       </div>
     </div>
   </div>
